@@ -1,2 +1,42 @@
-# hello-rasa
+## hello-rasa
 test thử venv và rasa
+
+```
+rasa init 
+rasa train 
+rasa shell 
+rasa run --enable-api 
+rasa run actions 
+```
+
+## how to use venv 
+
+- create env
+```
+python -m venv venv
+
+```
+- select env (ctrl + shift +p )  
+- new terminal 
+- install: 
+```
+pip install -r requirements.txt
+```
+
+## how to create 
+
+- in nlu.yml :example -> intent. điền vào intent + example . có thể dùng lockup để thêm nhiều từ cho một ngữ cảnh -> để học tốt hơn 
+- in rules.yml :intent-> action. điền vào action tương ứng với intent bên trên 
+- in domain.yml :
+>   định nghĩa lại intent vô đây
+>   action-> return ngay (response) . pre = utter
+>   định nghĩa action . pre = action -> tên này trùng với tên trong action.py
+
+
+## note : 
+- khi nào nên dùng action : 
+> bthg dùng rasa như tách từ call service.
+> khi cần xử lí các tác vụ liền mạch, lưu tracking, session 
+
+- rasa nlu, rasa core 
+- story.yml để có ngữ cảnh hơn là chỉ hỏi đáp 

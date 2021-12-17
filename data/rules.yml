@@ -1,0 +1,24 @@
+version: "2.0"
+
+rules:
+
+- rule: Give information about covid
+  steps:
+  - intent: ask_covid_knowledge
+  - action: action_answer_covid_knowledge
+
+- rule: Give the situation about covid
+  steps:
+  - intent: ask_covid_situation
+  - action: action_answer_covid_situation
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot  # utter -> return text 
+
