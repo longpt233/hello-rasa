@@ -10,8 +10,8 @@ nlu:
 - intent: ask_covid_spec_vila
   examples: |
     - How many cases in [new york](city) ? 
-    - covid number in [new york](city)
-    - case covid in [new york](city)
+    - covid number in [Los Angeles](city)
+    - case covid in [Chicago](city)
 
 - intent: ask_covid_situation
   examples: |

@@ -45,3 +45,4 @@ pip install -r requirements.txt
 - story.yml để có ngữ cảnh hơn là chỉ hỏi đáp 
 - thêm action thì nhớ mở cổng 5055 trong file nào ấy 
 - muon extract entity thi dung symptom, add trong nlu + domain>slot
+- nen lay cac cau train trong nlu co entity sample khac nhau new york-Los Angeles,... vi mac du co lockup nhung no k work lam 
