@@ -10,6 +10,7 @@ intents:  # ý đồ người hỏi
   - bot_challenge
   - ask_covid_knowledge
   - ask_covid_situation
+  - ask_covid_spec_vila
 
 responses:
   utter_greet:
@@ -34,6 +35,15 @@ responses:
 actions:
   - action_answer_covid_situation    # đầu ngữ là utter thì là return text, đầu action là thực hiện gì đó 
   - action_answer_covid_knowledge
+  - action_ask_covid_spec_vila
+
+slots:
+  city:
+    type: list
+    influence_conversation: true
+  duration:
+    type: list
+    influence_conversation: true
 
 session_config:
   session_expiration_time: 60

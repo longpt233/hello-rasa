@@ -7,6 +7,12 @@ nlu:
     - what is covid?
     - I want to know about covid-19.
 
+- intent: ask_covid_spec_vila
+  examples: |
+    - How many cases in [new york](city) ? 
+    - covid number in [new york](city)
+    - case covid in [new york](city)
+
 - intent: ask_covid_situation
   examples: |
     - covid situation [this week](duration)?
@@ -18,6 +24,13 @@ nlu:
     - this week
     - this month
     - today
+
+- lookup: city
+  examples: |
+    - new york
+    - Los Angeles
+    - Chicago
+    - Dallas
 
 
 - intent: greet

@@ -31,9 +31,9 @@ pip install -r requirements.txt
 - in nlu.yml :example -> intent. điền vào intent + example . có thể dùng lockup để thêm nhiều từ cho một ngữ cảnh -> để học tốt hơn 
 - in rules.yml :intent-> action. điền vào action tương ứng với intent bên trên 
 - in domain.yml :
-  - định nghĩa lại intent vô đây   
-  -  action-> return ngay (response) . pre = utter      
-  -  định nghĩa action . pre = action -> tên này trùng với tên trong action.py    
+  -  định nghĩa lại intent vô đây   
+  -  dinh nghia action-> return ngay text : response . pre = utter.       
+  -  định nghĩa action-> more action      : action   . pre = action. tên này trùng với tên trong action.py    
 
 
 ## note : 
@@ -44,3 +44,4 @@ pip install -r requirements.txt
 - rasa nlu, rasa core 
 - story.yml để có ngữ cảnh hơn là chỉ hỏi đáp 
 - thêm action thì nhớ mở cổng 5055 trong file nào ấy 
+- muon extract entity thi dung symptom, add trong nlu + domain>slot

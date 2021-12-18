@@ -12,6 +12,11 @@ rules:
   - intent: ask_covid_situation
   - action: action_answer_covid_situation
 
+- rule: Give num covid special vila
+  steps:
+  - intent: ask_covid_spec_vila
+  - action: action_ask_covid_spec_vila
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
