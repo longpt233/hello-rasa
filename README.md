@@ -19,7 +19,7 @@ rasa run actions
 python -m venv venv
 
 ```
-- select env (ctrl + shift +p )  
+- select env (ctrl + shift +p ) or ```source venv/bin/activate`` 
 - new terminal 
 - install: 
 ```
